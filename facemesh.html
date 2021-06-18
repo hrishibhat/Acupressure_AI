@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script type="module" src="draw_facemesh.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Kevnz/stats.js/build/stats.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!--
+        <script src="https://unpkg.com/@tensorflow/tfjs-core@2.1.0/dist/tf-core.js"></script>
+<script src="https://unpkg.com/@tensorflow/tfjs-converter@2.1.0/dist/tf-converter.js"></script>
+
+ You must explicitly require a TF.js backend if you're not using the tfs union bundle. 
+<script src="https://unpkg.com/@tensorflow/tfjs-backend-wasm@2.1.0/dist/tf-backend-wasm.js"></script>
+-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/facemesh"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css">
+
+    <!--
+        <div class="ripple-background">
+  <div class="circle xxlarge shade1"></div>
+  <div class="circle xlarge shade2"></div>
+  <div class="circle large shade3"></div>
+  <div class="circle mediun shade4"></div>
+  <div class="circle small shade5"></div>
+</div>
+-->
+    <h1>Acupressure points</h1>
+
+    <video id="video" playsinline style="display: none;">
+    </video>
+    <div id="dash">
+        <div id="buttons">
+            <h2>Ailments</h2>
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet" />
+            <button type="button" class="fill" id="btn1">Headache</button>
+
+            <button type="button" class="fill" id="btn2">Sinus</button>
+
+            <button type="button" class="fill" id="btn3">Relaxation
+            </button>
+        </div>
+        <!--<video id="video" height="640"  width="480" playsinline >-->
+        <div id="cnvs">
+            <canvas id="output"></canvas>
+        </div>
+        <div id="buttons">
+            <h2>Choose points</h2>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet" />
+            <button type="button"  class="fill">Simple</button>
+
+            <button type="button" class="fill">Fill</button>
+
+            <button type="button"  class="fill">Slide
+            </button>
+        </div>
+    </div>
+
+</body>
+<script language="JavaScript" type="module" src="index_v3.js"></script>
+
+
+</html>
